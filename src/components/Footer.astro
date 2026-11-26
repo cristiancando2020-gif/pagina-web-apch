@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../utils/paths';
+
 const currentYear = new Date().getFullYear();
 ---
 
@@ -14,7 +16,7 @@ const currentYear = new Date().getFullYear();
                 <div class="footer-institucion">
 
                     <img
-                        src="/Images/Logo/Logo-apch.png"
+                        src={withBase('/Images/Logo/Logo-apch.png')}
                         alt="Logo Unidad Educativa Ángel Polibio Chaves"
                         class="footer-logo"
                     />
@@ -50,31 +52,31 @@ const currentYear = new Date().getFullYear();
                 <ul class="footer-links">
 
                     <li>
-                        <a href="/">
+                        <a href={withBase('/')}>
                             Inicio
                         </a>
                     </li>
 
                     <li>
-                        <a href="/institucion">
+                        <a href={withBase('/institucion')}>
                             Institución
                         </a>
                     </li>
 
                     <li>
-                        <a href="/oferta-educativa">
+                        <a href={withBase('/oferta-educativa')}>
                             Oferta Educativa
                         </a>
                     </li>
 
                     <li>
-                        <a href="/infraestructura">
+                        <a href={withBase('/infraestructura')}>
                             Infraestructura
                         </a>
                     </li>
 
                     <li>
-                        <a href="/galeria">
+                        <a href={withBase('/galeria')}>
                             Galería
                         </a>
                     </li>
@@ -94,19 +96,19 @@ const currentYear = new Date().getFullYear();
                 <ul class="footer-links">
 
                     <li>
-                        <a href="/horarios">
+                        <a href={withBase('/horarios')}>
                             Horarios
                         </a>
                     </li>
 
                     <li>
-                        <a href="/contacto">
+                        <a href={withBase('/contacto')}>
                             Contacto
                         </a>
                     </li>
 
                     <li>
-                        <a href="/oferta-educativa">
+                        <a href={withBase('/oferta-educativa')}>
                             Niveles Educativos
                         </a>
                     </li>

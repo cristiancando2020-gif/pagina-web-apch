@@ -1,3 +1,7 @@
+---
+import { withBase } from '../utils/paths';
+---
+
 <section class="oferta-educativa">
 
     <div class="container py-5">
@@ -107,7 +111,7 @@
         <div class="text-center mt-5">
 
             <a
-                href="/oferta-educativa"
+                href={withBase('/oferta-educativa')}
                 class="btn btn-apch"
             >
                 Conoce nuestra oferta educativa

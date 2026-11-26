@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import { withBase } from '../utils/paths';
 ---
 
 <Layout title="Oferta Educativa | Unidad Educativa Ángel Polibio Chaves">
@@ -41,7 +42,7 @@ import Navbar from '../components/Navbar.astro';
 
                             <div class="imagen-oferta">
                                 <img
-                                    src="/Images/OfertaAcademica/Inicial.png"
+                                    src={withBase('/Images/OfertaAcademica/Inicial.png')}
                                     alt="Educación Inicial"
                                 />
                             </div>
@@ -72,7 +73,7 @@ import Navbar from '../components/Navbar.astro';
 
                             <div class="imagen-oferta">
                                 <img
-                                    src="/Images/OfertaAcademica/Basica.png"
+                                    src={withBase('/Images/OfertaAcademica/Basica.png')}
                                     alt="Educación General Básica"
                                 />
                             </div>
@@ -105,7 +106,7 @@ import Navbar from '../components/Navbar.astro';
 
                             <div class="imagen-oferta">
                                 <img
-                                    src="/Images/OfertaAcademica/BachilleratoCiencias.png"
+                                    src={withBase('/Images/OfertaAcademica/BachilleratoCiencias.png')}
                                     alt="Bachillerato en Ciencias"
                                 />
                             </div>
@@ -137,7 +138,7 @@ import Navbar from '../components/Navbar.astro';
 
                             <div class="imagen-oferta">
                                 <img
-                                    src="/Images/OfertaAcademica/Informatica.png"
+                                    src={withBase('/Images/OfertaAcademica/Informatica.png')}
                                     alt="Bachillerato Técnico en Informática"
                                 />
                             </div>
@@ -171,7 +172,7 @@ import Navbar from '../components/Navbar.astro';
 
                            <div class="imagen-oferta">
                               <img
-                                 src="/Images/OfertaAcademica/Telecomunicaciones.png"
+                                 src={withBase('/Images/OfertaAcademica/Telecomunicaciones.png')}
                                  alt="Bachillerato Técnico en Telecomunicaciones y Redes"
                               />
                           </div>

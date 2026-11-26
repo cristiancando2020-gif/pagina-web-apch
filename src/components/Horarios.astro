@@ -1,3 +1,7 @@
+---
+import { withBase } from '../utils/paths';
+---
+
 <section class="horarios-seccion">
 
     <div class="container py-5">
@@ -176,7 +180,7 @@
 
 
                 <a
-                    href="/Documents/Horarios-Bachillerato-2026-2027.pdf"
+                    href={withBase('/Documents/Horarios-Bachillerato-2026-2027.pdf')}
                     target="_blank"
                     class="btn btn-apch"
                 >
@@ -189,7 +193,7 @@
             <div class="pdf-contenedor">
 
                 <iframe
-                    src="/Documents/Horarios-Bachillerato-2026-2027.pdf"
+                    src={withBase('/Documents/Horarios-Bachillerato-2026-2027.pdf')}
                     title="Horarios de Bachillerato 2026-2027"
                 >
                 </iframe>

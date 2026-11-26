@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import { withBase } from '../utils/paths';
 ---
 
 <Layout title="Institución | Unidad Educativa Ángel Polibio Chaves">
@@ -40,7 +41,7 @@ import Navbar from '../components/Navbar.astro';
                     <div class="col-lg-6">
 
                         <img
-                            src="/Images/Institucion/Historia-apch.jpg"
+                            src={withBase('/Images/Institucion/Historia-apch.jpg')}
                             alt="Unidad Educativa Ángel Polibio Chaves"
                             class="img-fluid rounded-4 shadow historia-imagen"
                         />

@@ -1,3 +1,7 @@
+---
+import { withBase } from '../utils/paths';
+---
+
 <section class="presentacion-institucional py-5">
 
     <div class="container py-4">
@@ -7,7 +11,7 @@
             <div class="col-lg-6">
 
                 <img
-                    src="/Images/Institucion/Institucion-apch.jpg"
+                    src={withBase('/Images/Institucion/Institucion-apch.jpg')}
                     alt="Unidad Educativa Ángel Polibio Chaves"
                     class="img-fluid rounded-4 shadow imagen-presentacion"
                 />
@@ -36,7 +40,7 @@
                     Bachillerato Técnico en Informática.
                 </p>
 
-                <a href="/institucion" class="btn btn-apch">
+                <a href={withBase('/institucion')} class="btn btn-apch">
                     Conoce nuestra historia
                 </a>
 

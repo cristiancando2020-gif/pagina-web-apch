@@ -1,13 +1,17 @@
+---
+import { withBase } from '../utils/paths';
+---
+
 <nav class="navbar navbar-expand-lg navbar-dark navbar-apch sticky-top">
 
     <div class="container">
 
         <!-- Logo y nombre -->
-        <a class="navbar-brand d-flex align-items-center" href="/">
+        <a class="navbar-brand d-flex align-items-center" href={withBase('/')}>
 
             <div class="logo-marco">
                 <img
-                   src="/Images/Logo/Logo-apch.png"
+                   src={withBase('/Images/Logo/Logo-apch.png')}
                    alt="Escudo de la Unidad Educativa Ángel Polibio Chaves"
                    class="logo-navbar"
                 />
@@ -43,43 +47,43 @@
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/">
+                    <a class="nav-link" href={withBase('/')}>
                         Inicio
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/institucion">
+                    <a class="nav-link" href={withBase('/institucion')}>
                         Institución
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/oferta-educativa">
+                    <a class="nav-link" href={withBase('/oferta-educativa')}>
                         Oferta Educativa
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/horarios">
+                    <a class="nav-link" href={withBase('/horarios')}>
                         Horarios
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/infraestructura">
+                    <a class="nav-link" href={withBase('/infraestructura')}>
                         Infraestructura
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/galeria">
+                    <a class="nav-link" href={withBase('/galeria')}>
                         Galería
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacto">
+                    <a class="nav-link" href={withBase('/contacto')}>
                         Contacto
                     </a>
                 </li>
