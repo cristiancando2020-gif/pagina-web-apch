@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Horarios from '../components/Horarios.astro';
+---
+
+<Layout title="Horarios | Unidad Educativa Ángel Polibio Chaves">
+
+    <Navbar />
+
+    <main>
+
+        <section class="pagina-encabezado">
+
+            <div class="container text-center">
+
+                <span class="subtitulo-seccion">
+                    Información académica
+                </span>
+
+                <h1>
+                    Horarios
+                </h1>
+
+                <p>
+                    Consulta los horarios de clases correspondientes
+                    al periodo lectivo 2026 - 2027.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <Horarios />
+
+    </main>
+
+</Layout>

@@ -1,0 +1,2002 @@
+/* ===============================
+   PALETA DE COLORES INSTITUCIONAL
+================================ */
+
+/* ===============================
+   PALETA INSTITUCIONAL DEFINITIVA
+================================ */
+
+:root {
+
+    /* Rojo institucional principal */
+    --color-primary: #c5232a;
+
+    /* Rojo oscuro */
+    --color-primary-dark: #9f1d23;
+
+    /* Rojo claro */
+    --color-primary-light: #df5155;
+
+    /* Rojo muy suave */
+    --color-primary-soft: #fbe9e8;
+
+    /* Dorado */
+    --color-accent: #e3ac2b;
+
+    /* Dorado hover */
+    --color-accent-dark: #c89420;
+
+    /* Fondo principal */
+    --color-background: #ffffff;
+
+    /* Fondo secundario */
+    --color-background-soft: #f7f7f7;
+
+    /* Fondo cálido para footer */
+    --color-footer: #f7f2ed;
+
+    /* Fondo inferior del footer */
+    --color-footer-bottom: #eee8e2;
+
+    /* Texto principal */
+    --color-text: #202932;
+
+    /* Texto secundario */
+    --color-text-light: #5f6871;
+
+    /* Bordes */
+    --color-border: #e5e5e5;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar-apch {
+    background: linear-gradient(
+        90deg,
+        #b91f26,
+        #c5232a
+    );
+
+    padding: 8px 0;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ===============================
+   LOGO
+================================ */
+
+.logo-marco {
+    width: 88px;
+    height: 88px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    /* Reducimos el borde interior */
+    padding: 1px;
+
+    border-radius: 5px;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+
+.logo-navbar {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ===============================
+   NOMBRE INSTITUCIÓN
+================================ */
+
+.nombre-institucion {
+    color: #ffffff;
+
+    line-height: 1.45;
+}
+
+
+.nombre-institucion strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+
+.nombre-institucion span {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+
+/* ===============================
+   MENÚ
+================================ */
+
+.navbar-apch .nav-link {
+    color: rgba(255, 255, 255, 0.95);
+
+    font-weight: 500;
+
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.navbar-apch .nav-link:hover {
+    color: #ffd45f;
+}
+
+
+/* Quitamos bordes extraños */
+.navbar-apch .navbar-brand {
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    padding: 0;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .logo-marco {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nombre-institucion strong {
+        font-size: 0.75rem;
+    }
+
+    .nombre-institucion span {
+        font-size: 0.9rem;
+    }
+
+}
+/* ===============================
+   HERO PRINCIPAL
+================================ */
+
+/*.hero-apch {
+    min-height: 620px;
+
+    background-image:
+        linear-gradient(
+            rgba(45, 30, 30, 0.50),
+            rgba(65, 35, 35, 0.55)
+        ),
+        url('/Images/Institucion/Portada-apch.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    width: 100%;
+}
+
+
+*/
+/* ======================================
+   CARRUSEL PRINCIPAL - EVENTOS APCH
+====================================== */
+
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* IMÁGENES */
+
+.carousel-imagen {
+    width: 100%;
+    height: 570px;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+
+/* OSCURECIMIENTO DE LA FOTO */
+
+.carousel-filtro {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(15, 20, 28, 0.72) 0%,
+            rgba(15, 20, 28, 0.52) 45%,
+            rgba(15, 20, 28, 0.20) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* CONTENIDO */
+
+.carousel-caption-apch {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* TEXTO */
+
+.contenido-evento {
+    max-width: 680px;
+
+    color: #ffffff;
+}
+
+
+.evento-etiqueta {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #ffffff;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.contenido-evento h1,
+.contenido-evento h2 {
+    color: #ffffff;
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.contenido-evento p {
+    max-width: 610px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    font-size: 1.12rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+}
+
+
+/* BOTÓN */
+
+.btn-evento {
+    background-color: var(--color-primary);
+
+    color: #ffffff;
+
+    padding: 12px 24px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.btn-evento:hover {
+    background-color: var(--color-primary-dark);
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* FLECHAS */
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 4;
+
+    width: 7%;
+}
+
+
+/* PUNTOS INFERIORES */
+
+.carousel-indicators {
+    z-index: 4;
+}
+
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+
+    border-radius: 50%;
+
+    margin: 0 6px !important;
+}
+
+
+/* TRANSICIÓN */
+
+.carousel-fade .carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media (max-width: 768px) {
+
+    .carousel-imagen {
+        height: 520px;
+    }
+
+    .contenido-evento {
+        max-width: 90%;
+    }
+
+    .contenido-evento h1,
+    .contenido-evento h2 {
+        font-size: 2.2rem;
+    }
+
+    .contenido-evento p {
+        font-size: 1rem;
+
+        line-height: 1.5;
+    }
+
+    .evento-etiqueta {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .carousel-imagen {
+        height: 520px;
+    }
+
+    .hero-contenido-carousel h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-contenido-carousel .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-location {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+
+    .hero-apch {
+        min-height: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+    }
+
+}
+/* ===============================
+   DATOS INSTITUCIONALES
+================================ */
+
+.datos-institucionales {
+    background-color: #ffffff;
+
+    padding: 45px 0;
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.dato-numero {
+    display: block;
+
+    color: var(--color-primary);
+
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.dato-texto {
+    display: block;
+
+    color: var(--color-text-light);
+
+    margin-top: 10px;
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+
+    .dato-numero {
+        font-size: 2rem;
+    }
+
+    .dato-item {
+        margin-bottom: 20px;
+    }
+
+}
+/* ===============================
+   PRESENTACIÓN INSTITUCIONAL
+================================ */
+
+.presentacion-institucional {
+    background-color: var(--color-background);
+}
+
+.subtitulo-seccion {
+    color: var(--color-primary);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.titulo-seccion {
+    color: var(--color-text);
+
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.presentacion-institucional p {
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.imagen-presentacion {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.btn-apch {
+    background-color: var(--color-primary);
+
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 25px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.btn-apch:hover {
+    background-color: var(--color-primary-dark);
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+/* ===============================
+   MISIÓN Y VISIÓN
+================================ */
+
+.mision-vision {
+    background-color: var(--color-background-soft);
+    padding: 35px 0;
+}
+
+.encabezado-seccion {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.descripcion-seccion {
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.tarjeta-identidad {
+    background-color: var(--color-background);
+    padding: 40px;
+    border-radius: 15px;
+    height: 100%;
+    border-top: 5px solid var(--color-primary);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-identidad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.icono-identidad {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-primary-light)
+    );
+
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 8px 20px rgba(138, 61, 61, 0.18);
+}
+.icono-identidad span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    line-height: 1;
+}
+.tarjeta-identidad h3 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.tarjeta-identidad p {
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+}
+/* ===============================
+   OFERTA EDUCATIVA
+================================ */
+
+.oferta-educativa {
+    background-color: #ffffff;
+    padding: 35px 0;
+}
+
+.tarjeta-oferta {
+    position: relative;
+
+    height: 100%;
+    min-height: 290px;
+
+    padding: 35px 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e7e7e7;
+    border-radius: 15px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.tarjeta-oferta:hover {
+    transform: translateY(-7px);
+
+    border-color: var(--color-primary);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ===============================
+   TARJETAS OFERTA EDUCATIVA
+================================ */
+
+.tarjeta-oferta-detalle {
+    height: 100%;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.tarjeta-oferta-detalle:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--color-primary);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* IMAGEN */
+
+.imagen-oferta {
+    width: 115px;
+    height: 115px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagen-oferta img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* TÍTULO */
+
+.titulo-oferta {
+    font-size: 1.25rem;
+    font-weight: 800;
+
+    color: #202932;
+
+    line-height: 1.3;
+
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO */
+
+.tarjeta-oferta-detalle p {
+    color: #555555;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* CAJA INFERIOR */
+
+.detalle-oferta {
+    padding: 15px;
+
+    background-color: #f7f7f7;
+
+    border-left: 4px solid var(--color-primary);
+
+    border-radius: 5px;
+
+    line-height: 1.5;
+}
+
+
+.detalle-oferta strong {
+    color: #202932;
+
+    font-weight: 700;
+}
+/* ===============================
+   PÁGINA OFERTA EDUCATIVA
+================================ */
+
+.pagina-encabezado {
+    background-color: #f5f5f5;
+    padding: 70px 0;
+}
+
+.pagina-encabezado h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 10px 0 15px;
+}
+
+.pagina-encabezado p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.oferta-detalle {
+    background-color: #ffffff;
+}
+
+.tarjeta-oferta-detalle {
+    height: 100%;
+
+    padding: 35px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+
+    background-color: white;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-oferta-detalle:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+.tarjeta-oferta-detalle h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.tarjeta-oferta-detalle p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.nivel-detalle {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #f8f8f8;
+
+    border-left: 4px solid var(--color-primary);
+
+    border-radius: 5px;
+}
+/* ===============================
+   AUTORIDADES
+================================ */
+
+.autoridades {
+    background-color: #ffffff;
+}
+
+.tarjeta-autoridad {
+    height: 100%;
+    padding: 30px 20px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-autoridad:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+.autoridad-icono {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+
+    font-size: 30px;
+
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.20);
+}
+
+.tarjeta-autoridad h3 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.tarjeta-autoridad p {
+    color: var(--color-primary);
+    font-weight: 600;
+    margin: 0;
+}
+/* ===============================
+   HISTORIA INSTITUCIONAL
+================================ */
+
+.historia-completa {
+    background-color: #ffffff;
+}
+
+.historia-imagen {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+}
+
+.historia-completa p {
+    color: #555;
+    line-height: 1.8;
+}
+
+
+/* Línea de tiempo */
+
+.linea-tiempo {
+    position: relative;
+    max-width: 950px;
+    margin: 60px auto 0;
+}
+
+.evento-historia {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+
+    position: relative;
+
+    padding-bottom: 45px;
+}
+
+.evento-historia::before {
+    content: "";
+
+    position: absolute;
+
+    left: 58px;
+    top: 60px;
+    bottom: 0;
+
+    width: 3px;
+
+    background-color: #e2e2e2;
+}
+
+.evento-historia:last-child::before {
+    display: none;
+}
+
+.anio-historia {
+    width: 115px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-primary);
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 1.2rem;
+    font-weight: 800;
+
+    box-shadow: 0 6px 16px rgba(139, 0, 0, 0.20);
+}
+
+.anio-historia.actualidad {
+    background-color: var(--color-primary-light);
+}
+
+.contenido-historia {
+    background-color: #f8f8f8;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border-left: 4px solid var(--color-primary);
+}
+
+.contenido-historia h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+.contenido-historia p {
+    margin-bottom: 10px;
+}
+
+
+/* ===============================
+   DATOS GENERALES
+================================ */
+
+.datos-generales-institucion {
+    background-color: #f5f5f5;
+}
+
+.dato-general {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+
+    height: 100%;
+
+    padding: 25px;
+
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e5e5;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dato-general:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dato-general-icono {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-primary);
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+.dato-general strong {
+    color: #222;
+}
+
+.dato-general p {
+    margin: 5px 0 0;
+
+    color: #666;
+}
+
+
+/* ===============================
+   INSTITUCIÓN ACTUAL
+================================ */
+
+.institucion-actual {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.institucion-actual .subtitulo-seccion {
+    color: #ffd2d2;
+}
+
+.institucion-actual .titulo-seccion {
+    color: white;
+}
+
+.actual-item {
+    padding: 20px;
+}
+
+.actual-item strong {
+    display: block;
+
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.actual-item span {
+    display: block;
+
+    margin-top: 7px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .evento-historia {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .evento-historia::before {
+        display: none;
+    }
+
+    .anio-historia {
+        width: 100px;
+    }
+
+}
+/* ===============================
+   INFRAESTRUCTURA
+================================ */
+
+.infraestructura-seccion {
+    background-color: #ffffff;
+}
+
+.tarjeta-infraestructura {
+    height: 100%;
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-infraestructura:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+}
+
+
+/* CONTENEDOR DE LA FOTO */
+
+.infraestructura-imagen {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    background-color: #eeeeee;
+}
+
+
+/* TODAS LAS FOTOS TENDRÁN EL MISMO TAMAÑO */
+
+.infraestructura-imagen img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.tarjeta-infraestructura:hover .infraestructura-imagen img {
+    transform: scale(1.05);
+}
+
+
+/* TEXTO */
+
+.infraestructura-contenido {
+    padding: 25px;
+}
+
+.infraestructura-contenido h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+.infraestructura-contenido p {
+    color: #666;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+/* ===============================
+   GALERÍA
+================================ */
+
+.galeria-seccion {
+    background-color: #ffffff;
+}
+
+.galeria-item {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+
+    text-decoration: none;
+}
+
+
+/* IMAGEN */
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* CAPA SOBRE LA FOTO */
+
+.galeria-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(60, 0, 0, 0.85)
+        );
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* TEXTO */
+
+.galeria-overlay h3 {
+    color: white;
+
+    font-size: 1.25rem;
+    font-weight: 800;
+
+    margin-bottom: 4px;
+}
+
+.galeria-overlay span {
+    color: #eeeeee;
+
+    font-size: 0.9rem;
+}
+
+
+/* HOVER */
+
+.galeria-item:hover img {
+    transform: scale(1.08);
+}
+
+.galeria-item:hover .galeria-overlay {
+    opacity: 1;
+}
+
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .galeria-overlay {
+        opacity: 1;
+    }
+
+}
+/* ===============================
+   HORARIOS
+================================ */
+
+.horarios-seccion {
+    background-color: #ffffff;
+}
+
+
+/* INFORMACIÓN DE JORNADA */
+
+.horario-info {
+    padding: 25px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 15px;
+}
+
+.horario-dato {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 20px;
+}
+
+.horario-icono {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-primary);
+
+    border-radius: 50%;
+
+    font-size: 24px;
+}
+
+.horario-dato strong {
+    display: block;
+}
+
+.horario-dato p {
+    margin: 5px 0 0;
+
+    color: var(--color-primary);
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+
+/* LISTADO DE CURSOS */
+
+.horarios-subtitulo {
+    font-size: 1.6rem;
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.grupo-horarios {
+    padding: 25px 0;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.grupo-horarios h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.lista-cursos {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.lista-cursos span {
+    padding: 8px 16px;
+
+    background-color: #f5f5f5;
+
+    color: var(--color-primary);
+
+    border: 1px solid #dddddd;
+
+    border-radius: 25px;
+
+    font-weight: 700;
+}
+
+
+/* VISOR PDF */
+
+.visor-horarios {
+    padding: 30px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 15px;
+}
+
+.visor-encabezado {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.visor-encabezado h3 {
+    margin: 5px 0 0;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.pdf-contenedor {
+    width: 100%;
+
+    height: 850px;
+
+    overflow: hidden;
+
+    background-color: #dddddd;
+
+    border-radius: 10px;
+}
+
+.pdf-contenedor iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .visor-encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pdf-contenedor {
+        height: 600px;
+    }
+
+}
+/* ===============================
+   CONTACTO
+================================ */
+
+.contacto-seccion {
+    background-color: #ffffff;
+}
+
+
+/* TARJETAS */
+
+.tarjeta-contacto {
+    height: 100%;
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-contacto:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.contacto-icono {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    box-shadow: 0 8px 20px rgba(138, 61, 61, 0.18);
+}
+
+
+.tarjeta-contacto h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+
+.tarjeta-contacto p {
+    color: #555;
+
+    margin-bottom: 8px;
+}
+
+
+.tarjeta-contacto span {
+    color: #777;
+
+    font-size: 0.9rem;
+}
+
+
+.tarjeta-contacto a {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.tarjeta-contacto a:hover {
+    text-decoration: underline;
+}
+
+
+/* MAPA */
+
+.mapa-contacto {
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background-color: #f5f5f5;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.mapa-informacion {
+    height: 100%;
+
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.mapa-informacion h3 {
+    font-size: 2rem;
+    font-weight: 800;
+
+    margin: 10px 0 20px;
+}
+
+
+.mapa-informacion p {
+    color: #555;
+
+    line-height: 1.7;
+}
+
+
+.mapa-informacion .btn {
+    align-self: flex-start;
+
+    margin-top: 10px;
+}
+
+
+.mapa-iframe {
+    width: 100%;
+    height: 450px;
+
+    display: block;
+
+    border: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .mapa-informacion {
+        padding: 35px;
+    }
+
+    .mapa-iframe {
+        height: 400px;
+    }
+
+}
+/* ===============================
+   FOOTER
+================================ */
+
+.footer-apch {
+    background-color: var(--color-footer);
+
+    color: var(--color-text);
+
+    padding-top: 60px;
+
+    border-top: 1px solid #eee5dd;
+}
+
+
+/* LOGO E INSTITUCIÓN */
+
+.footer-institucion {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 200px;
+
+    object-fit: contain;
+}
+
+.footer-institucion h2 {
+    color: var(--color-text);
+
+    margin: 0;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer-institucion h3 {
+    color: var(--color-text);
+
+    margin: 3px 0 0;
+
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.footer-descripcion {
+    color: var(--color-text-light);
+
+    line-height: 1.7;
+
+    max-width: 360px;
+}
+
+/* TÍTULOS */
+
+.footer-titulo {
+    color: var(--color-primary);
+
+    font-size: 1.15rem;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.footer-titulo::after {
+    content: "";
+
+    display: block;
+
+    width: 40px;
+    height: 3px;
+
+    margin-top: 8px;
+
+    background-color: var(--color-accent);
+}
+
+
+/* ENLACES */
+
+.footer-links {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--color-text-light);
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+
+    padding-left: 5px;
+}
+
+
+/* CONTACTO */
+
+.footer-contacto p {
+    color: var(--color-text-light);
+}
+
+.footer-contacto a {
+    color: var(--color-text-light);
+
+    text-decoration: none;
+}
+
+.footer-contacto a:hover {
+    color: var(--color-primary);
+}
+
+
+/* PARTE INFERIOR */
+
+.footer-inferior {
+    margin-top: 50px;
+
+    padding: 20px 0;
+
+    background-color: var(--color-footer-bottom);
+
+    border-top: 1px solid #ddd5ce;
+}
+
+.footer-inferior p {
+    margin: 0;
+
+    color: var(--color-text-light);
+
+    font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .footer-apch {
+        padding-top: 45px;
+    }
+
+    .footer-inferior-contenido {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+/* ===============================
+   AUTORIDADES INSTITUCIONALES
+================================ */
+
+.autoridades-seccion {
+    background-color: #ffffff;
+}
+
+
+/* TARJETA */
+
+.tarjeta-autoridad {
+    height: 100%;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e4e4e4;
+    border-radius: 16px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.tarjeta-autoridad:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* FOTOGRAFÍA */
+
+.autoridad-imagen {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    background-color: var(--color-background-soft);
+}
+
+
+.autoridad-imagen img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    transition: transform 0.4s ease;
+}
+
+
+.tarjeta-autoridad:hover .autoridad-imagen img {
+    transform: scale(1.04);
+}
+
+
+/* INFORMACIÓN */
+
+.autoridad-contenido {
+    padding: 25px 20px;
+
+    text-align: center;
+}
+
+
+.autoridad-cargo {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: var(--color-primary);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.autoridad-contenido h3 {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .autoridad-imagen {
+        aspect-ratio: 5 / 4;
+    }
+
+}
+
+.titulo-datos {
+    color: var(--color-text);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
